@@ -15,9 +15,12 @@
   <div id="particles-js"></div>
   <div id="app"></div>
 
-  <!-- 🎵 Música de fondo y botón 🎵 -->
-  <audio id="bg-music" src="https://cdn.pixabay.com/download/audio/2022/08/05/audio_50f19d497c.mp3?filename=cinematic-action-113382.mp3" loop></audio>
+  <!-- 🎵 Música de fondo -->
+  <audio id="bg-music" loop>
+    <source src="https://files.catbox.moe/csl7zo.mp3" type="audio/mp3">
+  </audio>
 
+  <!-- Botón para controlar la música -->
   <button id="music-button" onclick="toggleMusic()">🎵</button>
 
   <!-- Scripts -->
@@ -47,18 +50,16 @@
 
     function toggleMusic() {
       if (music.paused) {
-        music.play();
-        button.textContent = '🔇';
+        music.play().then(() => {
+          button.textContent = '🔇';
+        }).catch((e) => {
+          console.log('Error al intentar reproducir: ', e);
+        });
       } else {
         music.pause();
         button.textContent = '🎵';
       }
     }
-
-    // Intentar reproducir la música al cargar (puede ser bloqueado por navegador móvil)
-    music.play().catch(() => {
-      console.log('Autoplay bloqueado por navegador');
-    });
   </script>
 </body>
 </html>
