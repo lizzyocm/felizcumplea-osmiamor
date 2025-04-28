@@ -15,6 +15,13 @@
   <div id="particles-js"></div>
   <div id="app"></div>
 
+  <!-- Música de fondo -->
+  <audio id="bg-music" src="https://cdn.pixabay.com/download/audio/2022/08/05/audio_50f19d497c.mp3?filename=cinematic-action-113382.mp3" loop></audio>
+
+  <!-- Botón para controlar la música -->
+  <button id="music-button" onclick="toggleMusic()">🎵</button>
+
+  <!-- Scripts -->
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script>
@@ -34,6 +41,25 @@
         }
       }
     });
+
+    const music = document.getElementById('bg-music');
+    const button = document.getElementById('music-button');
+    
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+        button.textContent = '🔇';
+      } else {
+        music.pause();
+        button.textContent = '🎵';
+      }
+    }
+
+    // Intentar que la música empiece sola (algunos navegadores bloquean autoplay)
+    music.play().catch(() => {
+      console.log('Autoplay bloqueado por navegador');
+    });
   </script>
 </body>
 </html>
+
