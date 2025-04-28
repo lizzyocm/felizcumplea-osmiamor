@@ -15,14 +15,6 @@
   <div id="particles-js"></div>
   <div id="app"></div>
 
-  <!-- 🎵 Música de fondo -->
-  <audio id="bg-music" loop>
-    <source src="https://files.catbox.moe/csl7zo.mp3" type="audio/mp3">
-  </audio>
-
-  <!-- Botón para controlar la música -->
-  <button id="music-button" onclick="toggleMusic()">🎵</button>
-
   <!-- Scripts -->
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
@@ -44,22 +36,6 @@
         }
       }
     });
-
-    const music = document.getElementById('bg-music');
-    const button = document.getElementById('music-button');
-
-    function toggleMusic() {
-      if (music.paused) {
-        music.play().then(() => {
-          button.textContent = '🔇';
-        }).catch((e) => {
-          console.log('Error al intentar reproducir: ', e);
-        });
-      } else {
-        music.pause();
-        button.textContent = '🎵';
-      }
-    }
   </script>
 </body>
 </html>
