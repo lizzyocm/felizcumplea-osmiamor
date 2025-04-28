@@ -67,7 +67,7 @@ body {
   margin-top: 30px;
 }
 
-/* Botón de música */
+/* 🎵 Botón música */
 #music-button {
   position: fixed;
   top: 15px;
@@ -89,7 +89,7 @@ body {
   100% { opacity: 1; transform: scale(1); }
 }
 
-/* Responsivo para celular */
+/* 📱 Responsive para celular */
 @media (max-width: 600px) {
   .carta {
     margin: 20px 10px;
