@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Jua', sans-serif;
-  background: #000 url('https://i.imgur.com/AYPVU5q.png') center center / cover no-repeat fixed;
+  background: #000 url('https://i.imgur.com/k9T5sVP.png') center center / cover no-repeat fixed;
   color: #fff;
   overflow-x: hidden;
 }
@@ -28,10 +28,10 @@ body {
 }
 
 .corazon {
-  font-size: 70px;
+  font-size: 80px;
   text-align: center;
   margin-bottom: 30px;
-  animation: latir 2s infinite;
+  animation: latido 1.5s infinite;
 }
 
 .mensaje {
@@ -50,6 +50,7 @@ body {
   border: 3px solid #FF0000;
   box-shadow: 0 0 10px #FF0000;
   object-fit: cover;
+  animation: flotar 2s ease;
   transition: transform 0.3s;
 }
 
@@ -101,12 +102,17 @@ body {
   100% { opacity: 1; transform: scale(1); }
 }
 
-@keyframes latir {
+@keyframes latido {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.2); }
 }
 
-/* 📱 Responsive */
+@keyframes flotar {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive para celular */
 @media (max-width: 600px) {
   .carta {
     margin: 30px 15px;
@@ -115,7 +121,7 @@ body {
   }
 
   .corazon {
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 20px;
   }
 
