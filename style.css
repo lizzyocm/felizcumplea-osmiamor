@@ -91,6 +91,30 @@ body {
   margin-top: 40px;
 }
 
+/* Botón de sorpresa 🎈 */
+.boton-sorpresa {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.boton-sorpresa a {
+  background-color: #FF0000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background 0.3s, transform 0.3s;
+  display: inline-block;
+  font-family: 'Jua', sans-serif;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+.boton-sorpresa a:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
 /* Animaciones */
 @keyframes aparecer {
   0% { opacity: 0; transform: scale(0.9); }
@@ -102,7 +126,7 @@ body {
   50% { transform: scale(1.1); }
 }
 
-/* 📱 Responsive para celular */
+/* 📱 Responsive */
 @media (max-width: 600px) {
   .carta {
     margin: 30px 15px;
