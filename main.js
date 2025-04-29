@@ -1,21 +1,23 @@
-// Partículas rojas
+// Inicializar partículas rojas
 particlesJS("particles-js", {
-  "particles": {
-    "number": { "value": 60 },
-    "color": { "value": "#ff0000" },
-    "size": { "value": 3 },
-    "move": { "speed": 1 },
-    "opacity": { "value": 0.4 },
-    "line_linked": { "enable": false }
+  particles: {
+    number: { value: 60, density: { enable: true, value_area: 800 } },
+    color: { value: "#ff0000" },
+    shape: { type: "circle" },
+    opacity: { value: 0.4 },
+    size: { value: 3 },
+    line_linked: { enable: false },
+    move: { enable: true, speed: 1 }
   },
-  "interactivity": {
-    "events": {
-      "onhover": { "enable": true, "mode": "repulse" }
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" }
     }
-  }
+  },
+  retina_detect: true
 });
 
-// Efecto de rastro del cursor
+// Cursor con brillitos rojos
 document.addEventListener('mousemove', (e) => {
   const sparkle = document.createElement('div');
   sparkle.className = 'sparkle';
@@ -25,7 +27,7 @@ document.addEventListener('mousemove', (e) => {
   setTimeout(() => sparkle.remove(), 500);
 });
 
-// Carta
+// Carta de cumpleaños
 document.getElementById('app').innerHTML = `
   <div class="carta">
     <div class="corazon">❤️</div>
