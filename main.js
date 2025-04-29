@@ -6,15 +6,15 @@ document.getElementById('app').innerHTML = `
 
       Quiero desearte unos hermosos 25 años y que en esta etapa de tu vida seas tan feliz como sea posible. Que puedas cumplir todos esos objetivos que te ponés en mente y que todo lo que te toque vivir sea éxito y suerte.<br><br>
 
-      <img class="foto-carta" src="./imagenes/275c03a5-9a95-478d-b237-9bce564308f9 (1).png" alt="foto1"><br><br>
+      <img class="foto-carta" src="./imagenes/foto1.png" alt="foto1"><br><br>
 
       Incluso si no es conmigo, o si alguna vez nuestros caminos se separan, nunca voy a dejar de desearte felicidad, y que cada 28 de abril puedas decir que fue otro año valioso, con muchos motivos para agradecer.<br><br>
 
-      <img class="foto-carta" src="./imagenes/73512e5f-524c-4cbd-aaf2-b6d823c38e06.png" alt="foto2"><br><br>
+      <img class="foto-carta" src="./imagenes/foto2.png" alt="foto2"><br><br>
 
       Sos el amor de mi vida. Aunque solo te tuve durante casi dos años, desde la primera vez que hablamos sentí que te conocía de toda la vida. Me permitiste conocer partes tuyas del pasado, cada piedrita que te llevó a lograr todo lo que hoy tenés.<br><br>
 
-      <img class="foto-carta" src="./imagenes/ddefce4e-292b-4e90-927a-70273f4d051c.jpeg" alt="foto3"><br><br>
+      <img class="foto-carta" src="./imagenes/foto3.png" alt="foto3"><br><br>
 
       Estoy muy orgullosa del hombre en el que te convertiste, y también del hombre que fuiste, de todo lo que afrontaste solo y superaste sin ayuda de nadie, de tu resiliencia y tu gran voluntad.<br><br>
 
