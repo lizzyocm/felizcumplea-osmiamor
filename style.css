@@ -5,7 +5,7 @@ body {
   background-color: #000;
   color: #fff;
   overflow-x: hidden;
-  cursor: none; /* ocultamos el cursor original para usar efecto */
+  cursor: none;
 }
 
 #particles-js {
@@ -97,7 +97,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Cursor especial (brillo rojo) */
+/* Efecto del cursor */
 .sparkle {
   position: absolute;
   width: 8px;
@@ -117,7 +117,6 @@ body {
   }
 }
 
-/* Animaciones */
 @keyframes aparecer {
   0% { opacity: 0; transform: scale(0.9); }
   100% { opacity: 1; transform: scale(1); }
@@ -133,7 +132,6 @@ body {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .carta {
     margin: 30px 15px;
