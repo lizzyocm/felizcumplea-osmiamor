@@ -97,7 +97,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Efecto del cursor */
 .sparkle {
   position: absolute;
   width: 8px;
